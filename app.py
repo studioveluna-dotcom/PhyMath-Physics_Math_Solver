@@ -26,8 +26,10 @@ if st.sidebar.button("Thunderbooolllltttttt!!!! Calculatiiinnngggg"):
     poke_msgs = ["Pikachu used 100% Accuracy!", "Bulbasaur says: Perfect shot!", 
                  "Charizard approves: That’s hot math!", "Physics Master Badge earned!"]
     
-    st.balloons()
-    st.success(random.choice(poke_msgs))
+    st.toast('Thunderbolt! Direct hit! ⚡' , 
+            icon='⚡')
+    st.success("Pikachu used Thunderbolt!!! A perfect HITT")
+    st.image("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3gxMHliM2lrajI3NTN4N25sZWVuYjQ1bTFjeXA0a2d1OG84ZjM0YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6sPy5yjk6b6aQ/giphy.gif")
     
     # Results
     col1, col2, col3 = st.columns(3)
