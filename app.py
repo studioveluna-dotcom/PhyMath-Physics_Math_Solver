@@ -15,7 +15,7 @@ u = st.sidebar.number_input("Initial Velocity u (m/s)", min_value=0.0, value=20.
 theta = st.sidebar.number_input("Launch Angle θ (degrees)", 0.0, 90.0, 45.0)
 g = 9.81
 
-if st.sidebar.button("I Choose You! Solve It"):
+if st.sidebar.button("Thunderbooolllltttttt!!!! Calculatiiinnngggg"):
     # Calculations
     theta_rad = np.radians(theta)
     t_flight = 2 * u * np.sin(theta_rad) / g
