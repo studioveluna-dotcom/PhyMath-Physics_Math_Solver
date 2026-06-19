@@ -43,9 +43,9 @@ if mode == "Physics Solver":
           
           # Showing steps  in toggle
           with st.expander("Show Steps - How I caught this answer"):
-          st.latex(r'''Time: t = \frac{2u\sin\theta}{g} = \frac{2 \times %s \times \sin(%s°)}{9.81} = %.2f s''' % (u, theta, t_flight))
-          st.latex(r'''Height: H = \frac{u^2\sin^2\theta}{2g} = %.2f m''' % h_max)
-          st.latex(r'''Range: R = \frac{u^2\sin2\theta}{g} = %.2f m''' % range_p)
+               st.latex(r'''Time: t = \frac{2u\sin\theta}{g} = \frac{2 \times %s \times \sin(%s°)}{9.81} = %.2f s''' % (u, theta, t_flight))
+               st.latex(r'''Height: H = \frac{u^2\sin^2\theta}{2g} = %.2f m''' % h_max)
+               st.latex(r'''Range: R = \frac{u^2\sin2\theta}{g} = %.2f m''' % range_p)
           
           # Graphingg
           t = np.linspace(0, t_flight, 100)
