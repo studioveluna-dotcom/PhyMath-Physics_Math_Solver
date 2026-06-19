@@ -12,7 +12,7 @@ st.write("Catching calculation errors like pokemons so you score 80+")
 mode = st.selectbox("Choose your Trainer path:", ["Physics Solver", "Trainer Quiz Mode"])
 st.divider()
 
-if mode == "Physics Solver":
+if mode == "Physics (Projectile Solver)":
      # Sidebar inputs
      st.sidebar.header("Projectile Launcher")
      u = st.sidebar.number_input("Initial Velocity u (m/s)", min_value=0.0, value=20.0)
@@ -63,7 +63,7 @@ if mode == "Physics Solver":
           st.write("---")
 
 elif mode == "Trainer Quiz Mode":
-        st.subheader("welcome to Trainer Quiz!! ")
+        st.subheader("Welcome to Trainer Quiz!! ")
         st.write("Team Rocket is Waiting... ARE.YOU.READY??")
         st.info("Step 3 coming next: Questions + Ash vs Team Rocket")
 
