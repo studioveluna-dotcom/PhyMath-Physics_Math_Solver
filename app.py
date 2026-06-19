@@ -9,7 +9,7 @@ st.set_page_config(page_title="PhyMath", page_icon="⚡")
 
 st.title("PhyMath: Gotta Solve 'Em All! ⚡")
 st.write("Catching calculation errors like pokemons so you score 80+")
-mode = st.selectbox("Choose your Trainer path:", ["Physics Solver", "Trainer Quiz Mode"])
+mode = st.selectbox("Choose your Trainer path:", ["Physics Projectile Solver", "Trainer Quiz Mode"])
 st.divider()
 
 if mode == "Physics Projectile Solver":
