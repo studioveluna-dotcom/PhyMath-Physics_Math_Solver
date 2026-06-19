@@ -74,35 +74,35 @@ if mode == "Physics Projectile Solver":
           st.write("---")
 
 elif mode == "Trainer Quiz Mode":
-        st.header("Welcome to Trainer Quiz!!🎮 ")
-        st.write("Hey!! Team Rocket is Blastiong off with Physics Question. Answer the RIGHT One to WIN!!")
+    st.header("Welcome to Trainer Quiz!!🎮 ")
+    st.write("Hey!! Team Rocket is Blastiong off with Physics Question. Answer the RIGHT One to WIN!!")
 
           #Initialize score in session state
-     if 'score' not in st.session_state:
-             st.session_state.score = 0
-             st.session_state.q_num = 0
+    if 'score' not in st.session_state:
+        st.session_state.score = 0
+        st.session_state.q_num = 0
 
          # Question bank - Team Rocket themed
-     questions = [
+    questions = [
         {
             "q": "Team Rocket asks: If u=20 m/s and θ=30°, what is the time of flight? (g=9.8)",
             "options": ["2.04 s", "4.08 s", "1.02 s", "20.4 s"],
             "ans": "2.04 s",
             "explain": "Time = 2*u*sinθ/g = 2*20*sin30°/9.8 = 40*0.5/9.8 = 2.04s"
-        },
-        {
+            },
+            {
             "q": "Meowth challenges: A Pokéball launched at 15 m/s, 45° has what max height?",
             "options": ["5.74 m", "11.47 m", "22.94 m", "1.53 m"],
             "ans": "5.74 m",
             "explain": "H = u²sin²θ/2g = 225*0.5/19.6 = 5.74m"
-        },
-        {
+            },
+            {
             "q": "James sneers: Which angle gives MAXIMUM range for same speed?",
             "options": ["30°", "45°", "60°", "90°"],
             "ans": "45°",
             "explain": "Range = u²sin2θ/g. sin2θ is max when 2θ=90°, so θ=45°"
         }
-    ]
+        ]
 
     # Display current question
     current_q = questions[st.session_state.q_num % len(questions)]
